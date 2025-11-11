@@ -46,8 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DALJob.cs" />
-    <Compile Include="DbConnect.cs" />
+    <Compile Include="DAL\DALJob.cs" />
+    <Compile Include="DAL\DbConnect.cs" />
     <Compile Include="FormEJ05.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,8 +137,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAL\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
