@@ -49,7 +49,7 @@ namespace WindowsFormsConection
 
         private void btnEJ06_Click(object sender, EventArgs e)
         {
-            var formConection = new FormEJ06();
+            var formConection = new FormEJ06_arquitectura_por_capas_DAL();
             formConection.Show();
         }
     }

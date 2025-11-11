@@ -53,6 +53,12 @@
     <Compile Include="FormEJ05.Designer.cs">
       <DependentUpon>FormEJ05.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEJ06-arquitectura-por-capas-DAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEJ06-arquitectura-por-capas-DAL.Designer.cs">
+      <DependentUpon>FormEJ06-arquitectura-por-capas-DAL.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Jobs.cs" />
     <Compile Include="FormEJ01.cs">
       <SubType>Form</SubType>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEJ05.resx">
       <DependentUpon>FormEJ05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEJ06-arquitectura-por-capas-DAL.resx">
+      <DependentUpon>FormEJ06-arquitectura-por-capas-DAL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormStart.resx">
       <DependentUpon>FormStart.cs</DependentUpon>
