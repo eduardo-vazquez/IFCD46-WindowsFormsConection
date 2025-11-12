@@ -19,7 +19,8 @@ namespace WindowsFormsConection
 
         private void BtnInsertar_Click(object sender, EventArgs e)
         {
-            Jobs job = new Jobs(
+            Job
+                job = new Job(
                 null,
                 tbxJobTitle.Text,
                 string.IsNullOrEmpty(tbxMinSalary.Text) ? (decimal?)null : decimal.Parse(tbxMinSalary.Text),
@@ -29,12 +30,25 @@ namespace WindowsFormsConection
             try
             {
 
-                DALJobWithConnection.Insertar(job, new DbConnect());
+                DALJobWithConnection.Insertar(job);
                 ClearBox();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al insertar el registro: " + ex.Message);
+            }
+        }
+
+        private void CargarJobsEnGrid(object sender, EventArgs e)
+        {
+            try
+            {
+                List<Job> listaJobs = DALJobWithConnection.ObtenerTablaDeJobs();
+                dgvTablaJobs.DataSource = listaJobs;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los registros: " + ex.Message);
             }
         }
 

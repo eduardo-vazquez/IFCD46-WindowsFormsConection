@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL\DALJob-con-coneccion.cs" />
+    <Compile Include="DAL\DALJob-with-dbcnx.cs" />
     <Compile Include="DAL\DALJob.cs" />
     <Compile Include="DAL\DbConnect.cs" />
     <Compile Include="FormEJ05.cs">
@@ -67,7 +67,7 @@
     <Compile Include="FormEJ06-extendido.Designer.cs">
       <DependentUpon>FormEJ06-extendido.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Jobs.cs" />
+    <Compile Include="Model\Job.cs" />
     <Compile Include="FormEJ01.cs">
       <SubType>Form</SubType>
     </Compile>

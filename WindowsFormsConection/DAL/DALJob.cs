@@ -8,7 +8,7 @@ namespace WindowsFormsConection
 {
     internal class DALJob
     {
-         static public void Insertar(Jobs job, DbConnect connection)
+         static public void Insertar(Job job, DbConnect connection)
         {
             string sql = $@"INSERT INTO jobs(job_title, min_salary, max_salary) 
                 VALUES(@jobTitle, @min_salary, @max_salary)";
@@ -17,7 +17,7 @@ namespace WindowsFormsConection
             {
                 using (SqlCommand command = new SqlCommand(sql, connection.Connection))
                 {
-                    command.Parameters.AddWithValue("@jobTitle", job.jobTitle ?? (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@jobTitle", job.job_title ?? (object)DBNull.Value);
                     command.Parameters.AddWithValue("@min_salary", job.min_salary ?? (object)DBNull.Value);
                     command.Parameters.AddWithValue("@max_salary", job.max_salary ?? (object)DBNull.Value);
 

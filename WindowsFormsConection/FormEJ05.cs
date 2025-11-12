@@ -53,7 +53,7 @@ namespace WindowsFormsConection
             tbxEstadoDeConeccion.BackColor = Color.LightCoral;
         }
 
-        private void Insertar(Jobs job)
+        private void Insertar(Job job)
         {
             string sql = $@"INSERT INTO jobs(job_title, min_salary, max_salary) 
                 VALUES('@jobTitle', @min_salary, @max_salary)";
@@ -62,7 +62,7 @@ namespace WindowsFormsConection
             {
                 using (SqlCommand command = new SqlCommand(sql, connection))
                 {
-                    command.Parameters.AddWithValue("@title", job.jobTitle ?? (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@title", job.job_title ?? (object)DBNull.Value);
                     command.Parameters.AddWithValue("@min", job.min_salary ?? (object)DBNull.Value);
                     command.Parameters.AddWithValue("@max", job.max_salary ?? (object)DBNull.Value);
 
@@ -91,7 +91,7 @@ namespace WindowsFormsConection
 
         private void btnInsertar_Click(object sender, EventArgs e)
         {
-            Jobs job = new Jobs(
+            Job job = new Job(
                 null,
                 tbxJobTitle.Text,
                 string.IsNullOrEmpty(tbxMinSalary.Text) ? (decimal?)null : decimal.Parse(tbxMinSalary.Text),

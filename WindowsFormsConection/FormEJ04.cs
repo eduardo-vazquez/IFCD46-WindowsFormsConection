@@ -53,10 +53,10 @@ namespace WindowsFormsConection
             tbxEstadoDeConeccion.BackColor = Color.LightCoral;
         }
 
-        private void Insertar(Jobs job)
+        private void Insertar(Job job)
         {
             string sql = $@"INSERT INTO jobs(job_title, min_salary, max_salary) 
-                VALUES('{job.jobTitle}', {(job.min_salary.HasValue ? job.min_salary.ToString() : "NULL")}, 
+                VALUES('{job.job_title}', {(job.min_salary.HasValue ? job.min_salary.ToString() : "NULL")}, 
                                            {(job.max_salary.HasValue ? job.max_salary.ToString() : "NULL")})";
 
             try
@@ -86,7 +86,7 @@ namespace WindowsFormsConection
 
         private void btnInsertar_Click(object sender, EventArgs e)
         {
-            Jobs job = new Jobs(
+            Job job = new Job(
                 null,
                 tbxJobTitle.Text,
                 string.IsNullOrEmpty(tbxMinSalary.Text) ? (decimal?)null : decimal.Parse(tbxMinSalary.Text),

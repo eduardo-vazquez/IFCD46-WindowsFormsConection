@@ -57,7 +57,7 @@ namespace WindowsFormsConection
 
         private void btnInsertar_Click(object sender, EventArgs e)
         {
-            Jobs job = new Jobs(
+            Job job = new Job(
                 null,
                 tbxJobTitle.Text,
                 string.IsNullOrEmpty(tbxMinSalary.Text) ? (decimal?)null : decimal.Parse(tbxMinSalary.Text),

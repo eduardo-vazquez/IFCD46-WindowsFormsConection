@@ -6,20 +6,24 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsConection
 {
-    public class Jobs
+    public class Job
     {
-        public int? id { get; set; }
-        public string jobTitle { get; set; }
+        public int? job_id { get; set; }
+        public string job_title { get; set; }
         public decimal? min_salary { get; set; }
 
         public decimal? max_salary { get; set; }
 
-        public Jobs(int? id, string jobsTitle, decimal? min_salary, decimal? max_salary)
+        public Job(int? job_id, string job_title, decimal? min_salary, decimal? max_salary)
         {
-            this.id = id;
-            this.jobTitle = jobsTitle;
+            this.job_id = job_id;
+            this.job_title = job_title;
             this.min_salary = min_salary;
             this.max_salary = max_salary;
+        }
+
+        public Job()
+        {
         }
     }
 }

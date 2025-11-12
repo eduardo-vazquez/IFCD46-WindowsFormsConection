@@ -36,6 +36,9 @@
             this.tbxJobTitle = new System.Windows.Forms.TextBox();
             this.btnInsertar = new System.Windows.Forms.Button();
             this.tbxEstadoDeConeccion = new System.Windows.Forms.TextBox();
+            this.dgvTablaJobs = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTablaJobs)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -108,13 +111,32 @@
             this.tbxEstadoDeConeccion.Text = "Desconectado";
             this.tbxEstadoDeConeccion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // dgvTablaJobs
+            // 
+            this.dgvTablaJobs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTablaJobs.Location = new System.Drawing.Point(369, 88);
+            this.dgvTablaJobs.Name = "dgvTablaJobs";
+            this.dgvTablaJobs.Size = new System.Drawing.Size(487, 385);
+            this.dgvTablaJobs.TabIndex = 45;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(366, 52);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 13);
+            this.label4.TabIndex = 44;
+            this.label4.Text = "TABLA DE JOBS";
+            // 
             // FormEJ06_extendido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 564);
+            this.ClientSize = new System.Drawing.Size(887, 564);
+            this.Controls.Add(this.dgvTablaJobs);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbxMaxSalary);
             this.Controls.Add(this.tbxMinSalary);
@@ -123,6 +145,8 @@
             this.Controls.Add(this.tbxEstadoDeConeccion);
             this.Name = "FormEJ06_extendido";
             this.Text = "FormEJ06_extendido";
+            this.Load += new System.EventHandler(this.CargarJobsEnGrid);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTablaJobs)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,5 +162,7 @@
         private System.Windows.Forms.TextBox tbxJobTitle;
         private System.Windows.Forms.Button btnInsertar;
         private System.Windows.Forms.TextBox tbxEstadoDeConeccion;
+        private System.Windows.Forms.DataGridView dgvTablaJobs;
+        private System.Windows.Forms.Label label4;
     }
 }
