@@ -117,30 +117,12 @@
             this.btnInsertar.UseVisualStyleBackColor = true;
             this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
             // 
-            // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(17, 42);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 13);
-            this.label5.TabIndex = 53;
-            this.label5.Text = "NUEVO REGISTRO";
-            // 
-            // btnActualizarDGV
-            // 
-            this.btnActualizarDGV.Location = new System.Drawing.Point(711, 485);
-            this.btnActualizarDGV.Name = "btnActualizarDGV";
-            this.btnActualizarDGV.Size = new System.Drawing.Size(131, 27);
-            this.btnActualizarDGV.TabIndex = 47;
-            this.btnActualizarDGV.Text = "Actualizar Datos";
-            this.btnActualizarDGV.UseVisualStyleBackColor = true;
-            this.btnActualizarDGV.Click += new System.EventHandler(this.btnActualizarDGV_Click);
             // 
             // FormLINQ
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(874, 541);
             this.Controls.Add(this.dgvTablaJobs);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -152,9 +134,8 @@
             this.Controls.Add(this.tbxJobTitle);
             this.Controls.Add(this.btnActualizarDGV);
             this.Controls.Add(this.btnInsertar);
+            this.Controls.Add(this.tbxEstadoDeConeccion);
             this.Name = "FormLINQ";
-            this.Text = "LINQ";
-            this.Load += new System.EventHandler(this.CargarJobsEnGrid);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablaJobs)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -172,7 +153,5 @@
         private System.Windows.Forms.TextBox tbxMinSalary;
         private System.Windows.Forms.TextBox tbxJobTitle;
         private System.Windows.Forms.Button btnInsertar;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnActualizarDGV;
     }
 }

@@ -62,7 +62,7 @@ namespace WindowsFormsConection
             // PARA USARLO:
             // List<Job> listaJobs = DALJobLINQ.ObtenerRegistroDeTabla<Job>();
         }
-
+            
 
 
     }
