@@ -37,6 +37,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnEJ06Extendido = new System.Windows.Forms.Button();
+            this.btnFormLINQ = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -57,7 +58,7 @@
             this.btnEJ01.TabIndex = 1;
             this.btnEJ01.Text = "EJERCICIO 01";
             this.btnEJ01.UseVisualStyleBackColor = true;
-            this.btnEJ01.Click += new System.EventHandler(this.btnEJ01_Click);
+            this.btnEJ01.Click += new System.EventHandler(this.BtnEJ01_Click);
             // 
             // btnEJ02
             // 
@@ -67,7 +68,7 @@
             this.btnEJ02.TabIndex = 1;
             this.btnEJ02.Text = "EJERCICIO 02";
             this.btnEJ02.UseVisualStyleBackColor = true;
-            this.btnEJ02.Click += new System.EventHandler(this.btnEJ02_Click);
+            this.btnEJ02.Click += new System.EventHandler(this.BtnEJ02_Click);
             // 
             // btnEJ03
             // 
@@ -77,7 +78,7 @@
             this.btnEJ03.TabIndex = 1;
             this.btnEJ03.Text = "EJERCICIO 03";
             this.btnEJ03.UseVisualStyleBackColor = true;
-            this.btnEJ03.Click += new System.EventHandler(this.btnEJ03_Click);
+            this.btnEJ03.Click += new System.EventHandler(this.BtnEJ03_Click);
             // 
             // btnEJ04
             // 
@@ -87,7 +88,7 @@
             this.btnEJ04.TabIndex = 1;
             this.btnEJ04.Text = "EJERCICIO 04";
             this.btnEJ04.UseVisualStyleBackColor = true;
-            this.btnEJ04.Click += new System.EventHandler(this.btnEJ04_Click);
+            this.btnEJ04.Click += new System.EventHandler(this.BtnEJ04_Click);
             // 
             // btnEJ05
             // 
@@ -97,7 +98,7 @@
             this.btnEJ05.TabIndex = 1;
             this.btnEJ05.Text = "EJERCICIO 05";
             this.btnEJ05.UseVisualStyleBackColor = true;
-            this.btnEJ05.Click += new System.EventHandler(this.btnEJ05_Click);
+            this.btnEJ05.Click += new System.EventHandler(this.BtnEJ05_Click);
             // 
             // button1
             // 
@@ -107,7 +108,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "EJERCICIO 06";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btnEJ06_Click);
+            this.button1.Click += new System.EventHandler(this.BtnEJ06_Click);
             // 
             // label2
             // 
@@ -126,7 +127,17 @@
             this.btnEJ06Extendido.TabIndex = 1;
             this.btnEJ06Extendido.Text = "EJERCICIO 06 Extendido";
             this.btnEJ06Extendido.UseVisualStyleBackColor = true;
-            this.btnEJ06Extendido.Click += new System.EventHandler(this.btnEJ06Extendido_Click);
+            this.btnEJ06Extendido.Click += new System.EventHandler(this.BtnEJ06Extendido_Click);
+            // 
+            // btnFormLINQ
+            // 
+            this.btnFormLINQ.Location = new System.Drawing.Point(742, 230);
+            this.btnFormLINQ.Name = "btnFormLINQ";
+            this.btnFormLINQ.Size = new System.Drawing.Size(178, 36);
+            this.btnFormLINQ.TabIndex = 1;
+            this.btnFormLINQ.Text = "EJERCICIO LINQ";
+            this.btnFormLINQ.UseVisualStyleBackColor = true;
+            this.btnFormLINQ.Click += new System.EventHandler(this.BtnFormLINQ_Click);
             // 
             // FormStart
             // 
@@ -134,6 +145,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(980, 450);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnFormLINQ);
             this.Controls.Add(this.btnEJ06Extendido);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEJ05);
@@ -160,5 +172,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnEJ06Extendido;
+        private System.Windows.Forms.Button btnFormLINQ;
     }
 }

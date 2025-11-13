@@ -82,3 +82,5 @@ Extensión del proyecto:
 - ejecutar en comando con ExecuteScalar() en vez de ExecuteNonQuery, para recuperar el valor
 
 - es el ID del registro recien insertado, para actualizar el obejto Job pasado, que no tenía aun valor para ID
+
+

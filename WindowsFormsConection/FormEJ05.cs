@@ -86,9 +86,7 @@ namespace WindowsFormsConection
                 // Si prefieres que este método cierre la conexión:
                 // if (connection.State == ConnectionState.Open) connection.Close();
             }
-
         }
-
         private void btnInsertar_Click(object sender, EventArgs e)
         {
             Job job = new Job(
